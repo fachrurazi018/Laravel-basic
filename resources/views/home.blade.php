@@ -1,10 +1,12 @@
+{{-- Penggunaan extend yang disesuaikan dengan blade app agar tampilan seterusnya dapat dibuat lebih efisien --}}
 @extends('app')
+{{-- section content pada halaman home --}}
 @section('content')
     @auth
     <div class="nav-container">
         <div class="navbar">
             <a href="#">Dashboard</a>
-            <a href="#">About</a>
+            <a href="{{ route('produk') }}">Produk</a>
             <a href="#">Pemesanan</a>
             <div class="dropdown">
                 <button class="dropbtn">Profil</button>
